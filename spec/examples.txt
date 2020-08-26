@@ -1,8 +1,9 @@
 example_id                                         | status | run_time        |
 -------------------------------------------------- | ------ | --------------- |
-./spec/controllers/users_controller_spec.rb[1:1:1] | passed | 0.00601 seconds |
-./spec/controllers/users_controller_spec.rb[1:2:1] | passed | 0.01986 seconds |
-./spec/controllers/users_controller_spec.rb[1:2:2] | passed | 0.11782 seconds |
+./spec/controllers/users_controller_spec.rb[1:1:1] | passed | 0.26181 seconds |
+./spec/controllers/users_controller_spec.rb[1:2:1] | passed | 0.03036 seconds |
+./spec/controllers/users_controller_spec.rb[1:2:2] | passed | 0.19237 seconds |
+./spec/features/authentication_spec.rb[1:1]        | failed | 31.19 seconds   |
 ./spec/models/event_attending_spec.rb[1:1:1]       | passed | 0.02144 seconds |
 ./spec/models/event_attending_spec.rb[1:1:2]       | passed | 0.00227 seconds |
 ./spec/models/event_spec.rb[1:1:1]                 | passed | 0.004 seconds   |
