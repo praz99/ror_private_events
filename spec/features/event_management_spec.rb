@@ -17,7 +17,7 @@ RSpec.feature 'Event page' do
     expect(page).to have_content 'kikiolla'  
   end
 
-  scenario 'redirects to all events page ' do
+  scenario 'redirects to event index page ' do
     click_on 'Events'
     expect(page).to have_content 'All Event'
   end
