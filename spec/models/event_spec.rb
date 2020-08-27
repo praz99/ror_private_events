@@ -2,14 +2,14 @@ require 'rails_helper'
 
 RSpec.describe Event, type: :model do
   context 'ActiveModel Validations' do
-    subject {
+    subject do
       described_class.new(
         title: 'Hello',
         description: 'World',
         events_date: DateTime.now + 1.week,
         creator: User.new
       )
-    }
+    end
 
     it 'is valid with valid attirbutes' do
       expect(subject).to be_valid

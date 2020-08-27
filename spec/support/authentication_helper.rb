@@ -1,5 +1,4 @@
 module AuthenticationHelper
-  
   def sign_in(user)
     login(user)
   end

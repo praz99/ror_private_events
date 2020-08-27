@@ -2,7 +2,7 @@ require 'rails_helper'
 require 'spec_helper'
 
 RSpec.feature 'the signup process' do
-  before(:example) do 
+  before(:example) do
     visit new_user_url
   end
 
@@ -45,7 +45,7 @@ RSpec.feature 'sign in as a non-existing user' do
     click_on 'Log in'
   end
 
-  scenario 'should not redirect to user page' do 
+  scenario 'should not redirect to user page' do
     expect(page).not_to have_content ' Hello world '
   end
 
@@ -54,7 +54,7 @@ RSpec.feature 'sign in as a non-existing user' do
   end
 end
 
-RSpec.feature 'should sign in an existing user' do 
+RSpec.feature 'should sign in an existing user' do
   before(:example) do
     visit '/signup'
     expect(page).to have_content('Sign up')
@@ -75,5 +75,4 @@ RSpec.feature 'should sign in an existing user' do
   scenario 'shows username on the homepage after signup' do
     expect(page).to have_content 'kikiolla'
   end
-
 end

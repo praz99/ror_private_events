@@ -2,12 +2,12 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   context 'ActiveModel Validations' do
-    subject {
+    subject do
       described_class.new(
         name: 'Prazwal',
         username: 'praz'
       )
-    }
+    end
     it 'is valid with valid attributes' do
       expect(subject).to be_valid
     end

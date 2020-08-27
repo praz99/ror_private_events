@@ -13,8 +13,8 @@ RSpec.feature 'Event page' do
     click_on 'Log in'
   end
 
-  scenario 'redirects to the events page and displays the content' do 
-    expect(page).to have_content 'kikiolla'  
+  scenario 'redirects to the events page and displays the content' do
+    expect(page).to have_content 'kikiolla'
   end
 
   scenario 'redirects to event index page ' do
@@ -22,7 +22,7 @@ RSpec.feature 'Event page' do
     expect(page).to have_content 'All Event'
   end
 
-  scenario 'redirects to display single user events' do    
+  scenario 'redirects to display single user events' do
     visit '/users/1'
     expect(page).to have_content 'Display all user event'
   end

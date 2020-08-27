@@ -4,5 +4,5 @@ FactoryBot.define do
     description { 'Programming with rails' }
     events_date { Date.new(2009, 1, 3) }
     creator { User.first }
-  end 
+  end
 end
