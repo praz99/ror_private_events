@@ -21,7 +21,7 @@ RSpec.feature 'signing up a user' do
   end
 
   scenario 'after signing up redirect to user SHOW page' do
-    expect(page).to have_content 'Display all users'
+    expect(page).to have_content 'Display all user event'
   end
 
   scenario 'display username ontop of the page after signing up' do

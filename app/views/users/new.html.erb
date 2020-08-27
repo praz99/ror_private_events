@@ -6,9 +6,9 @@
       <%= render 'shared/error_messages' %>
 
       <%= f.label :name %>
-      <%= f.text_field :name, class: 'mb-1 form-control', autofocus: true %>
+      <%= f.text_field :name, id: 'name', class: 'mb-1 form-control', autofocus: true %>
       <%= f.label :username %>
-      <%= f.text_field :username, class:' mb-1 form-control' %>
+      <%= f.text_field :username, id: 'username', class:' mb-1 form-control' %>
       <%= f.submit "Create account", class: 'mt-2 btn btn-primary' %>
     <% end %>
   </div>
