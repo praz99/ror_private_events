@@ -8,8 +8,6 @@ module EventsHelper
   end
 
   def errors_check
-    if @user.errors.any?
-      render 'helper_partials/errors_count'
-    end
+    render 'helper_partials/errors_count' if @user.errors.any?
   end
 end
