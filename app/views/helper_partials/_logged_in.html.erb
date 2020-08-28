@@ -1,0 +1,4 @@
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <%= link_to current_user.name, user_path(current_user) %>
+  <%= link_to "log out", logout_path, class: 'mx-2', method: :delete %>
+</nav>
