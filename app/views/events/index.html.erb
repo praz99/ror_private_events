@@ -12,7 +12,8 @@
           <h6 class="card-subtitle mb-2 text-muted"><%= event.description %></h6>
           <p class="card-text"><span>Creator</span>
           <%= event.creator.name %></p>
-          <%= link_to 'Attend Event', events_attending_path, class:"card-link" %>
+          <%= link_to 'Show', event_path(event), class: "card-link btn btn-primary" %>
+          <%= link_to 'Attend Event', events_attending_path, class:"card-link btn btn-primary" %>
         </div>
       </div>
 
