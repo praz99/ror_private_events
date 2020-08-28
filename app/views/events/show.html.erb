@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="offset-4 col-md-4">
+    <h3 class="text-center"> Show A Single Event </h3>
+    
+    <strong>Title:</strong> <p><%=@event.title %></p><br />
+    <strong>Description:</strong> <p><%= @event.description %></p><br />
+    <strong>Event Date:</strong> <%= @event.events_date %><br />
+    <strong>Orgaised By:</strong> <%= link_to @event.creator.name, user_path(@event.creator) %><br />
+    <strong>Attendees:</strong> 
+    
+    <% @event.attendees.each do |attendee| %>
+      <li><%= link_to attendee.name, user_path(attendee) %></li>
+    <% end %>
+
+  </div>
+</div>
